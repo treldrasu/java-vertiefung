@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author effe
+ *
+ */
+module Comparator {
+}
