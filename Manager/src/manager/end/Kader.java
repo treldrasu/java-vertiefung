@@ -1,9 +1,10 @@
-package manager.a1;
+package manager.end;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import manager.a1.Main.PlayerException;
+import manager.a2.Spieler;
+import manager.exceptions.MannschaftException;
 
 
 public class Kader {
@@ -29,4 +30,5 @@ public class Kader {
 		}
 		return starke / spieler.size();
 	}
+
 }

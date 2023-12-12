@@ -1,4 +1,4 @@
-package manager.a1;
+package manager.a2;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ public class Team {
 	
 	@Override
 	public String toString() {
-		return "Team [name=" + name + ", trainer=" + trainer + ", torwart=" + torwart + ", kader=" + kader + "]";
+		return "Team [\nname=" + name + "\ntrainer=" + trainer.name + "\ntorwart=" + torwart.name + "\nkader=" + kader + "]";
 	}
 
 	public Team(String name, Trainer trainer, Torwart torwart, List<Spieler> kader) {

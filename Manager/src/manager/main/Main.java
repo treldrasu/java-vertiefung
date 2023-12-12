@@ -1,4 +1,4 @@
-package manager.a1.Main;
+package manager.main;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,6 +6,13 @@ import java.util.List;
 import java.util.Random;
 
 import manager.a1.*;
+import manager.a2.Mannschaft;
+import manager.a2.Spiel;
+import manager.a2.Spieler;
+import manager.a2.Torwart;
+import manager.a2.Trainer;
+import manager.exceptions.MannschaftException;
+import manager.exceptions.PlayerException;
 
 public class Main {
 		static Random ran = new Random();
@@ -42,7 +49,6 @@ public class Main {
 		}
 
 		try {
-			spieler = new ArrayList<>();
 			Mannschaft mannschaft = new Mannschaft(spieler, "FC Ungl�ck", trainer);
 			Mannschaft mannschaft2 = new Mannschaft(spieler2, "Bayern", trainer2);
 

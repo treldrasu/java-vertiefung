@@ -1,6 +1,11 @@
-package manager.a1;
+package manager.end;
 
 import java.util.List;
+
+import manager.a2.Kader;
+import manager.a2.Spieler;
+import manager.a2.Torwart;
+import manager.a2.Trainer;
 
 public class Mannschaft extends Kader{
 	public Trainer trainer;
@@ -8,6 +13,7 @@ public class Mannschaft extends Kader{
 	
 	public Mannschaft(List<Spieler> spieler, String mannschaftsName, Trainer trainer) throws Exception{
 		super(spieler);
+		System.out.println("Mannschaft" + spieler.size());
 		this.mannschaftsName = mannschaftsName;
 		this.trainer = trainer;
 	}

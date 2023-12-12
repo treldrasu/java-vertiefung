@@ -18,7 +18,7 @@ public class CatTest {
 			}
 			double d = 1234567.89;    
 			int i = 123;
-			System.out.println(new DecimalFormat(vi.format()).format(i));
+			System.out.println(new DecimalFormat(vi.format()).format(d));
 			
 			
 			for(Field f : myCat.getClass().getDeclaredFields()) {

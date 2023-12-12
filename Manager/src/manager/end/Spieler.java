@@ -1,6 +1,7 @@
-package manager.a1;
+package manager.end;
 
-import manager.end.Akteur;
+import manager.a2.Akteur;
+import manager.exceptions.PlayerException;
 
 public class Spieler extends Akteur{
 
@@ -9,7 +10,7 @@ public class Spieler extends Akteur{
 	public int motivation;
 	private int geschosseneTore;
 
-	public Spieler(String name, int alter, int staerke, int torschuss, int motivation){
+	public Spieler(String name, int alter, int staerke, int torschuss, int motivation) throws PlayerException {
 		super(name, alter);
 		this.staerke = staerke;
 		this.torschuss = torschuss;

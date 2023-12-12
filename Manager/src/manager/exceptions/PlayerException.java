@@ -1,9 +1,8 @@
-package manager.a1.Main;
+package manager.exceptions;
 
 import java.util.List;
 
-import manager.a1.MannschaftException;
-import manager.a1.Spieler;
+import manager.a2.Spieler;
 
 public class PlayerException extends IllegalArgumentException{
 

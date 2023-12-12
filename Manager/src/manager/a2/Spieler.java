@@ -1,6 +1,4 @@
-package manager.a1;
-
-import manager.end.Akteur;
+package manager.a2;
 
 public class Spieler extends Akteur{
 
@@ -15,6 +13,11 @@ public class Spieler extends Akteur{
 		this.torschuss = torschuss;
 		this.motivation = motivation;
 		this.geschosseneTore = 0;
+	}
+
+	@Override
+	public String toString() {
+		return "Spieler \n[name="+super.name+"\ngeschosseneTore=" + geschosseneTore + "]";
 	}
 
 	/**

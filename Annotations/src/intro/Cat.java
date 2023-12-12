@@ -1,9 +1,12 @@
 package intro;
 
 
+@VeryImportant(times = 10, format = "### €")
 public class Cat {
+	@ImportantString 
 	private final String name;
 	
+	@ImportantString
 	private int age;
 	
 	public int getAge() {

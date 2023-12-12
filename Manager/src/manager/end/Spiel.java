@@ -1,6 +1,10 @@
-package manager.a1;
+package manager.end;
 
 import java.util.Random;
+
+import manager.a2.Mannschaft;
+import manager.a2.Spieler;
+import manager.a2.Torwart;
 
 public class Spiel {
 	public Mannschaft heim;
