@@ -5,16 +5,8 @@ import java.util.List;
 import java.util.Random;
 
 public class Manager {
-    public static void main(String[] args){
-        //Start
-
-        int i = 1;
-
-        System.out.println(i++);
-        System.out.println(i);
-
-        // System.out.println("##### Manager Spiel #####");
-
+    public static void main(String[] args) throws Exception{
+        System.out.println("##### Manager Spiel #####");
 
         //Team 1
         Trainer t1 = new Trainer("Kai", 36  , 100);
@@ -22,13 +14,7 @@ public class Manager {
         List<Spieler> kader = generiereSpieler(10);
         kader.add(tw);
 
-        Mannschaft bay;
-        try {
-            bay = new Mannschaft(kader, "Bayern", t1);
-        } catch (Exception e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+        Mannschaft bay = new Mannschaft(kader, "Bayern", t1);
         // System.out.println(bay);
 
         //Team 2
