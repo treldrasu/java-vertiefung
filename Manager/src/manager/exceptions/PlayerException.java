@@ -1,10 +1,6 @@
 package manager.exceptions;
 
-import java.util.List;
-
-import manager.a2.Spieler;
-
-public class PlayerException extends IllegalArgumentException{
+public class PlayerException extends RuntimeException{
 
 	/**
 	 * 

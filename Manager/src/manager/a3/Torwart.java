@@ -1,4 +1,4 @@
-package manager.end;
+package manager.a3;
 
 public class Torwart extends Spieler {
 

@@ -1,4 +1,4 @@
-package manager.end;
+package manager.a3;
 
 import java.util.Random;
 
@@ -15,7 +15,7 @@ public class Spiel {
 	}
 	
 	public Boolean torchance(Spieler s, Torwart t, int aktuelleZeit, String m) {
-		System.out.println(s.name + " vs. " + t.name + " " + aktuelleZeit + " fuer " + m);
+		System.out.println("Minute: "+ aktuelleZeit + " -> "+ s.name + "("+ m +") vs. " + t.name);
 //		System.err.println(ran.nextInt((s.torschuss + t.reaktion)) - s.torschuss);
 		return (ran.nextInt((s.torschuss + t.reaktion)) - s.torschuss < 0);
 	}

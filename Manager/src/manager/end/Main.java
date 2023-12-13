@@ -1,16 +1,9 @@
-package manager.main;
+package manager.end;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-import manager.a1.*;
-import manager.a2.Mannschaft;
-import manager.a2.Spiel;
-import manager.a2.Spieler;
-import manager.a2.Torwart;
-import manager.a2.Trainer;
 import manager.exceptions.MannschaftException;
 import manager.exceptions.PlayerException;
 
@@ -18,19 +11,16 @@ public class Main {
 		static Random ran = new Random();
 	public static void main(String[] args){
 
-		generiereSpiel();
+		// try {
+			generiereSpiel();
+		// } catch (PlayerException e) {
+		// 	e.printStackTrace();
+		// }
 	}
 
-	private static void generiereSpiel() {
+	private static void generiereSpiel() throws PlayerException {
 		
-		Trainer trainer; 
-		try {
-			trainer = new Trainer("Hans", 0, 88);
-		}catch (PlayerException e) {
-			System.out.println("Alter war falsch, standard gesetzt");
-			trainer = new Trainer("Trainer BOT", 50, 88);
-		}
-
+		Trainer trainer = new Trainer("Hans", 0, 88);
 		Torwart torwart = new Torwart("Torwart", 0, 80, 10, 75, 80);
 		List<Spieler> spieler = new ArrayList<Spieler>();
 		spieler.add(torwart);
@@ -49,7 +39,7 @@ public class Main {
 		}
 
 		try {
-			Mannschaft mannschaft = new Mannschaft(spieler, "FC Ungl�ck", trainer);
+			Mannschaft mannschaft = new Mannschaft(spieler, "FC Unglueck", trainer);
 			Mannschaft mannschaft2 = new Mannschaft(spieler2, "Bayern", trainer2);
 
 			System.out.println(mannschaft.toString());
