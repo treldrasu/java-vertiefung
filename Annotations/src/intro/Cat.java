@@ -1,7 +1,7 @@
 package intro;
 
 
-@VeryImportant(times = 10, format = "### €")
+@VeryImpawtant(times = 10, format = "### €")
 public class Cat {
 	@ImportantString 
 	private final String name;

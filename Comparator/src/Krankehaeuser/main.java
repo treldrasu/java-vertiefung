@@ -16,14 +16,14 @@ public class main {
 				));
 		
 		List<Krankenhaus> k = new ArrayList<>(Arrays.asList(
-					new Krankenhaus(222, 20, "BW", 5, new ArrayList<>(Arrays.asList(
+					new Krankenhaus(222, 20, "BW", 5, Arrays.asList(
 							 new Virologe("Peter", "Petersen", 10),
 							 new Virologe("Peter", "Petersen", 2),
 							 new Virologe("Peter", "Petersen", 20),
 							 new Virologe("Peter", "Petersen", 8),
 							 new Virologe("Peter", "Petersen", 7),
 							 new Virologe("Dougy", "Hauser", 2)
-							))),
+							)),
 					new Krankenhaus(222, 200, "RP", 100, new ArrayList<>(Arrays.asList(
 							 new Virologe("Peter", "Petersen", 10),
 							 new Virologe("Dougy", "Hauser", 5)

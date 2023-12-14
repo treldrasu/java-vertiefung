@@ -38,5 +38,10 @@ public class Cat {
 	private static void geheim() {
 		System.out.println("Ich sollte geheim sein!");
 	}
+
+	@Override
+	public String toString() {
+		return "Cat [name=" + name + ", age=" + age + "]";
+	}
 	
 }

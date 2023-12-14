@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface VeryImportant {
+public @interface VeryImpawtant {
 	int times() default 1;
 	String format() default "";
 }

@@ -9,9 +9,9 @@ public class CatTest {
 	public static void main(String[] args) throws Exception {
 		Cat myCat = new Cat("Hansi", 4);
 		
-		if(myCat.getClass().isAnnotationPresent(VeryImportant.class)) {
+		if(myCat.getClass().isAnnotationPresent(VeryImpawtant.class)) {
 			
-			VeryImportant vi = myCat.getClass().getAnnotation(VeryImportant.class);
+			VeryImpawtant vi = myCat.getClass().getAnnotation(VeryImpawtant.class);
 			
 			for(int i = 0; i < vi.times(); i++) {
 				System.out.println("Very Importans");

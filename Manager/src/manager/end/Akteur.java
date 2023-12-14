@@ -7,7 +7,7 @@ public abstract class Akteur {
 	public String name;
 
 	public Akteur(String name, int alter){
-		this.alter = PlayerException.alterValide(alter);
+		this.alter = PlayerException.alterValide(alter, this);
 		this.name = name;
 	}
 }

@@ -1,6 +1,6 @@
 package Studen;
 
-public class Student implements Comparable<Student>{
+public class Student {
 	int rollno;
 	String vorname;
 	String nachname;
@@ -16,17 +16,17 @@ public class Student implements Comparable<Student>{
 		return this.rollno +" "+ this.vorname +" "+ this.nachname;
 	}
 
-	@Override
-	public int compareTo(Student o) {
-//		if(this.rollno < o.rollno) {
-//			return -1;
-//		}else if(this.rollno > o.rollno) {
-//			return 1;
-//		}
-//		return 0;
+// 	@Override
+// 	public int compareTo(Student o) {
+// //		if(this.rollno < o.rollno) {
+// //			return -1;
+// //		}else if(this.rollno > o.rollno) {
+// //			return 1;
+// //		}
+// //		return 0;
 		
-		return this.rollno - o.rollno;
-	}
+// 		return this.rollno - o.rollno;
+// 	}
 
 		
 }

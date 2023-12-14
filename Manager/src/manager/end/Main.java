@@ -20,7 +20,7 @@ public class Main {
 
 	private static void generiereSpiel() throws PlayerException {
 		
-		Trainer trainer = new Trainer("Hans", 0, 88);
+		Trainer trainer = new Trainer("Hans", 15, 88);
 		Torwart torwart = new Torwart("Torwart", 0, 80, 10, 75, 80);
 		List<Spieler> spieler = new ArrayList<Spieler>();
 		spieler.add(torwart);
@@ -29,6 +29,7 @@ public class Main {
 					(ran.nextInt(29) + 70)));
 		}
 		
+
 		Trainer trainer2 = new Trainer("Peter", 67, 90);
 		Torwart tor = new Torwart("Kahn", 38, 80, 25, 80, 99);
 		List<Spieler> spieler2 = new ArrayList<Spieler>();
